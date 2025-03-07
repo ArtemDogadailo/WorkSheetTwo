@@ -49,4 +49,15 @@ public class ConversionTest {
         assertEquals("-45", conv.integerToString(-45));
         assertEquals("0", conv.integerToString(0));
     }
+	
+	//testing method that switching upper and lower cases and vice versa
+	@Test
+    public void testSwitchCase() {
+        Conversions conv = new Conversions();
+        
+        //adding the values and testing the convertion method for different phrazes
+        assertEquals("hELLO wORLD", conv.switchCase("Hello World"));
+        assertEquals("123!@#", conv.switchCase("123!@#"));
+        assertEquals("tHiS iS a tEsT", conv.switchCase("ThIs Is A TeSt"));
+    }
 }
