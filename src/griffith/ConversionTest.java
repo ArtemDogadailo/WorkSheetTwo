@@ -38,4 +38,15 @@ public class ConversionTest {
 		assertEquals(-45, conv.stringToInteger("-45"));
 		assertThrows(NumberFormatException.class, () -> conv.stringToInteger("abc"));
 	}
+	
+	//testing integer to String method
+	@Test
+    public void testIntegerToString() {
+        Conversions conv = new Conversions();
+        
+        //adding reqired examples to test different values
+        assertEquals("123", conv.integerToString(123));
+        assertEquals("-45", conv.integerToString(-45));
+        assertEquals("0", conv.integerToString(0));
+    }
 }
