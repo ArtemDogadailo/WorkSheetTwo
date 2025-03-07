@@ -1,3 +1,5 @@
+//Artem Dogadailo 3133807
+
 package griffith;
 
 public class Conversions {
@@ -44,7 +46,7 @@ public class Conversions {
             else if (Character.isLowerCase(c)) {
                 result.append(Character.toUpperCase(c));
             }
-            //adding character to the future string
+            //adding character to the future string 
             else {
                 result.append(c);
             }
